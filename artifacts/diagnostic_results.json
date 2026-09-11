@@ -1,0 +1,1030 @@
+{
+  "data_hashes": {
+    "dev": "9587cc07430563674faaa7e3cf9f49f91c40676da5c955d3a1c3b631106f3ebc",
+    "test": "97b05126c336a6a9d44c919266977d890f6c2a961f796e1b6d87cbf64e516d4a",
+    "train": "2c075ac031aeb1d997308fa717039fa102b649e5022e5aea50bbc3cbea61a633"
+  },
+  "elapsed_seconds": 5.6856721000003745,
+  "label_source": "training_heuristic_circular",
+  "limitations": [
+    "Historical reply is not a verified resolution",
+    "Routing safety does not measure reply correctness",
+    "Score is not calibrated probability",
+    "Only one brand and old Twitter data"
+  ],
+  "python": "3.14.6",
+  "seed": 41,
+  "split_overlap_counts": {
+    "dev/test/author_id": 0,
+    "dev/test/group_id": 0,
+    "dev/test/id": 0,
+    "dev/test/normalized_text": 0,
+    "dev/test/reply_id": 0,
+    "train/dev/author_id": 0,
+    "train/dev/group_id": 0,
+    "train/dev/id": 0,
+    "train/dev/normalized_text": 0,
+    "train/dev/reply_id": 0,
+    "train/test/author_id": 0,
+    "train/test/group_id": 0,
+    "train/test/id": 0,
+    "train/test/normalized_text": 0,
+    "train/test/reply_id": 0
+  },
+  "status": "DIAGNOSTIC_ONLY_NOT_ACCURACY_EVIDENCE",
+  "systems": {
+    "retrieval": {
+      "accuracy": 0.6875,
+      "accuracy_wilson95": [
+        0.6119926624642644,
+        0.7542146987919733
+      ],
+      "auto_count": 0,
+      "auto_intent_accuracy": null,
+      "confusion": {
+        "account_access": {
+          "account_access": 4,
+          "billing": 2,
+          "library": 1,
+          "other": 4
+        },
+        "billing": {
+          "billing": 13,
+          "other": 1,
+          "subscription": 2
+        },
+        "feedback": {
+          "feedback": 4,
+          "library": 1,
+          "other": 4
+        },
+        "how_to": {
+          "account_access": 1,
+          "feedback": 1,
+          "how_to": 4,
+          "other": 2
+        },
+        "library": {
+          "feedback": 2,
+          "library": 16,
+          "other": 5
+        },
+        "other": {
+          "account_access": 1,
+          "billing": 1,
+          "how_to": 1,
+          "library": 1,
+          "other": 51,
+          "playback": 3,
+          "subscription": 1
+        },
+        "playback": {
+          "library": 3,
+          "other": 5,
+          "playback": 3
+        },
+        "subscription": {
+          "billing": 2,
+          "other": 6,
+          "subscription": 15
+        }
+      },
+      "coverage": 0.0,
+      "escalation_recall": 1.0,
+      "latency_ms_median": 3.141400000458816,
+      "latency_ms_p95": 6.117200002336176,
+      "macro_f1_bootstrap95": [
+        0.4965632750462472,
+        0.6972713934810709
+      ],
+      "macro_f1_fixed_8": 0.611370485641475,
+      "missed_escalations": 0,
+      "n": 160,
+      "over_escalation_rate": 1.0,
+      "per_intent": {
+        "account_access": {
+          "f1": 0.47058823529411764,
+          "precision": 0.6666666666666666,
+          "recall": 0.36363636363636365,
+          "support": 11
+        },
+        "billing": {
+          "f1": 0.7647058823529411,
+          "precision": 0.7222222222222222,
+          "recall": 0.8125,
+          "support": 16
+        },
+        "feedback": {
+          "f1": 0.5,
+          "precision": 0.5714285714285714,
+          "recall": 0.4444444444444444,
+          "support": 9
+        },
+        "how_to": {
+          "f1": 0.6153846153846154,
+          "precision": 0.8,
+          "recall": 0.5,
+          "support": 8
+        },
+        "library": {
+          "f1": 0.7111111111111111,
+          "precision": 0.7272727272727273,
+          "recall": 0.6956521739130435,
+          "support": 23
+        },
+        "other": {
+          "f1": 0.7445255474452555,
+          "precision": 0.6538461538461539,
+          "recall": 0.864406779661017,
+          "support": 59
+        },
+        "playback": {
+          "f1": 0.35294117647058826,
+          "precision": 0.5,
+          "recall": 0.2727272727272727,
+          "support": 11
+        },
+        "subscription": {
+          "f1": 0.7317073170731707,
+          "precision": 0.8333333333333334,
+          "recall": 0.6521739130434783,
+          "support": 23
+        }
+      },
+      "required_escalations": 115,
+      "routing_reasons": {
+        "account_or_sensitive_action": 55,
+        "followup_requires_context_review": 4,
+        "insufficient_context": 71,
+        "no_reusable_historical_reply": 1,
+        "weak_or_conflicting_evidence": 29
+      },
+      "slices": {
+        "first_contact": {
+          "accuracy": 0.6946564885496184,
+          "accuracy_wilson95": [
+            0.6111769763005397,
+            0.7670445814383184
+          ],
+          "auto_count": 0,
+          "auto_intent_accuracy": null,
+          "confusion": {
+            "account_access": {
+              "account_access": 4,
+              "billing": 2,
+              "library": 1,
+              "other": 3
+            },
+            "billing": {
+              "billing": 13,
+              "other": 1,
+              "subscription": 2
+            },
+            "feedback": {
+              "feedback": 3,
+              "library": 1,
+              "other": 1
+            },
+            "how_to": {
+              "account_access": 1,
+              "feedback": 1,
+              "how_to": 4
+            },
+            "library": {
+              "feedback": 2,
+              "library": 14,
+              "other": 4
+            },
+            "other": {
+              "account_access": 1,
+              "billing": 1,
+              "library": 1,
+              "other": 37,
+              "playback": 3,
+              "subscription": 1
+            },
+            "playback": {
+              "library": 3,
+              "other": 4,
+              "playback": 2
+            },
+            "subscription": {
+              "billing": 1,
+              "other": 6,
+              "subscription": 14
+            }
+          },
+          "coverage": 0.0,
+          "escalation_recall": 1.0,
+          "macro_f1_bootstrap95": [
+            0.5065236555639439,
+            0.7261817047948594
+          ],
+          "macro_f1_fixed_8": 0.636986215538847,
+          "missed_escalations": 0,
+          "n": 131,
+          "over_escalation_rate": 1.0,
+          "per_intent": {
+            "account_access": {
+              "f1": 0.5,
+              "precision": 0.6666666666666666,
+              "recall": 0.4,
+              "support": 10
+            },
+            "billing": {
+              "f1": 0.7878787878787878,
+              "precision": 0.7647058823529411,
+              "recall": 0.8125,
+              "support": 16
+            },
+            "feedback": {
+              "f1": 0.5454545454545454,
+              "precision": 0.5,
+              "recall": 0.6,
+              "support": 5
+            },
+            "how_to": {
+              "f1": 0.8,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "support": 6
+            },
+            "library": {
+              "f1": 0.7,
+              "precision": 0.7,
+              "recall": 0.7,
+              "support": 20
+            },
+            "other": {
+              "f1": 0.74,
+              "precision": 0.6607142857142857,
+              "recall": 0.8409090909090909,
+              "support": 44
+            },
+            "playback": {
+              "f1": 0.2857142857142857,
+              "precision": 0.4,
+              "recall": 0.2222222222222222,
+              "support": 9
+            },
+            "subscription": {
+              "f1": 0.7368421052631579,
+              "precision": 0.8235294117647058,
+              "recall": 0.6666666666666666,
+              "support": 21
+            }
+          },
+          "required_escalations": 95,
+          "unsafe_auto_rate": null,
+          "unsafe_auto_wilson95": null
+        },
+        "followup": {
+          "accuracy": 0.6551724137931034,
+          "accuracy_wilson95": [
+            0.47344776507155983,
+            0.8005949125080951
+          ],
+          "auto_count": 0,
+          "auto_intent_accuracy": null,
+          "confusion": {
+            "account_access": {
+              "other": 1
+            },
+            "billing": {},
+            "feedback": {
+              "feedback": 1,
+              "other": 3
+            },
+            "how_to": {
+              "other": 2
+            },
+            "library": {
+              "library": 2,
+              "other": 1
+            },
+            "other": {
+              "how_to": 1,
+              "other": 14
+            },
+            "playback": {
+              "other": 1,
+              "playback": 1
+            },
+            "subscription": {
+              "billing": 1,
+              "subscription": 1
+            }
+          },
+          "coverage": 0.0,
+          "escalation_recall": 1.0,
+          "macro_f1_bootstrap95": [
+            0.17232142857142857,
+            0.5243777056277056
+          ],
+          "macro_f1_fixed_8": 0.4112612612612613,
+          "missed_escalations": 0,
+          "n": 29,
+          "over_escalation_rate": 1.0,
+          "per_intent": {
+            "account_access": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 1
+            },
+            "billing": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": null,
+              "support": 0
+            },
+            "feedback": {
+              "f1": 0.4,
+              "precision": 1.0,
+              "recall": 0.25,
+              "support": 4
+            },
+            "how_to": {
+              "f1": 0.0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "support": 2
+            },
+            "library": {
+              "f1": 0.8,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "support": 3
+            },
+            "other": {
+              "f1": 0.7567567567567568,
+              "precision": 0.6363636363636364,
+              "recall": 0.9333333333333333,
+              "support": 15
+            },
+            "playback": {
+              "f1": 0.6666666666666666,
+              "precision": 1.0,
+              "recall": 0.5,
+              "support": 2
+            },
+            "subscription": {
+              "f1": 0.6666666666666666,
+              "precision": 1.0,
+              "recall": 0.5,
+              "support": 2
+            }
+          },
+          "required_escalations": 20,
+          "unsafe_auto_rate": null,
+          "unsafe_auto_wilson95": null
+        }
+      },
+      "unsafe_auto_rate": null,
+      "unsafe_auto_wilson95": null
+    },
+    "simple": {
+      "accuracy": 0.79375,
+      "accuracy_wilson95": [
+        0.7245248445564205,
+        0.849200021411685
+      ],
+      "auto_count": 40,
+      "auto_intent_accuracy": 0.775,
+      "confusion": {
+        "account_access": {
+          "account_access": 7,
+          "billing": 3,
+          "other": 1
+        },
+        "billing": {
+          "billing": 15,
+          "subscription": 1
+        },
+        "feedback": {
+          "feedback": 1,
+          "library": 2,
+          "other": 6
+        },
+        "how_to": {
+          "billing": 1,
+          "how_to": 3,
+          "library": 1,
+          "other": 2,
+          "subscription": 1
+        },
+        "library": {
+          "library": 21,
+          "other": 2
+        },
+        "other": {
+          "account_access": 2,
+          "library": 2,
+          "other": 50,
+          "playback": 1,
+          "subscription": 4
+        },
+        "playback": {
+          "library": 3,
+          "playback": 8
+        },
+        "subscription": {
+          "other": 1,
+          "subscription": 22
+        }
+      },
+      "coverage": 0.25,
+      "escalation_recall": 0.9739130434782609,
+      "latency_ms_median": 0.4862000023422297,
+      "latency_ms_p95": 0.9671000007074326,
+      "macro_f1_bootstrap95": [
+        0.5972134627386344,
+        0.7723706063328705
+      ],
+      "macro_f1_fixed_8": 0.6999351361650827,
+      "missed_escalations": 3,
+      "n": 160,
+      "over_escalation_rate": 0.17777777777777778,
+      "per_intent": {
+        "account_access": {
+          "f1": 0.7,
+          "precision": 0.7777777777777778,
+          "recall": 0.6363636363636364,
+          "support": 11
+        },
+        "billing": {
+          "f1": 0.8571428571428571,
+          "precision": 0.7894736842105263,
+          "recall": 0.9375,
+          "support": 16
+        },
+        "feedback": {
+          "f1": 0.2,
+          "precision": 1.0,
+          "recall": 0.1111111111111111,
+          "support": 9
+        },
+        "how_to": {
+          "f1": 0.5454545454545454,
+          "precision": 1.0,
+          "recall": 0.375,
+          "support": 8
+        },
+        "library": {
+          "f1": 0.8076923076923077,
+          "precision": 0.7241379310344828,
+          "recall": 0.9130434782608695,
+          "support": 23
+        },
+        "other": {
+          "f1": 0.8264462809917356,
+          "precision": 0.8064516129032258,
+          "recall": 0.847457627118644,
+          "support": 59
+        },
+        "playback": {
+          "f1": 0.8,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "support": 11
+        },
+        "subscription": {
+          "f1": 0.8627450980392157,
+          "precision": 0.7857142857142857,
+          "recall": 0.9565217391304348,
+          "support": 23
+        }
+      },
+      "required_escalations": 115,
+      "routing_reasons": {
+        "account_or_sensitive_action": 62,
+        "insufficient_context": 58,
+        "simple_template": 40
+      },
+      "slices": {
+        "first_contact": {
+          "accuracy": 0.8091603053435115,
+          "accuracy_wilson95": [
+            0.7334423284113565,
+            0.8672624985856534
+          ],
+          "auto_count": 35,
+          "auto_intent_accuracy": 0.7428571428571429,
+          "confusion": {
+            "account_access": {
+              "account_access": 6,
+              "billing": 3,
+              "other": 1
+            },
+            "billing": {
+              "billing": 15,
+              "subscription": 1
+            },
+            "feedback": {
+              "feedback": 1,
+              "library": 2,
+              "other": 2
+            },
+            "how_to": {
+              "billing": 1,
+              "how_to": 3,
+              "library": 1,
+              "subscription": 1
+            },
+            "library": {
+              "library": 18,
+              "other": 2
+            },
+            "other": {
+              "account_access": 2,
+              "library": 2,
+              "other": 37,
+              "playback": 1,
+              "subscription": 2
+            },
+            "playback": {
+              "library": 3,
+              "playback": 6
+            },
+            "subscription": {
+              "other": 1,
+              "subscription": 20
+            }
+          },
+          "coverage": 0.26717557251908397,
+          "escalation_recall": 0.968421052631579,
+          "macro_f1_bootstrap95": [
+            0.6030010184435151,
+            0.8135261606006287
+          ],
+          "macro_f1_fixed_8": 0.724485227624283,
+          "missed_escalations": 3,
+          "n": 131,
+          "over_escalation_rate": 0.1111111111111111,
+          "per_intent": {
+            "account_access": {
+              "f1": 0.6666666666666666,
+              "precision": 0.75,
+              "recall": 0.6,
+              "support": 10
+            },
+            "billing": {
+              "f1": 0.8571428571428571,
+              "precision": 0.7894736842105263,
+              "recall": 0.9375,
+              "support": 16
+            },
+            "feedback": {
+              "f1": 0.3333333333333333,
+              "precision": 1.0,
+              "recall": 0.2,
+              "support": 5
+            },
+            "how_to": {
+              "f1": 0.6666666666666666,
+              "precision": 1.0,
+              "recall": 0.5,
+              "support": 6
+            },
+            "library": {
+              "f1": 0.782608695652174,
+              "precision": 0.6923076923076923,
+              "recall": 0.9,
+              "support": 20
+            },
+            "other": {
+              "f1": 0.8505747126436781,
+              "precision": 0.8604651162790697,
+              "recall": 0.8409090909090909,
+              "support": 44
+            },
+            "playback": {
+              "f1": 0.75,
+              "precision": 0.8571428571428571,
+              "recall": 0.6666666666666666,
+              "support": 9
+            },
+            "subscription": {
+              "f1": 0.8888888888888888,
+              "precision": 0.8333333333333334,
+              "recall": 0.9523809523809523,
+              "support": 21
+            }
+          },
+          "required_escalations": 95,
+          "unsafe_auto_rate": 0.08571428571428572,
+          "unsafe_auto_wilson95": [
+            0.029581831005296905,
+            0.22379599071162518
+          ]
+        },
+        "followup": {
+          "accuracy": 0.7241379310344828,
+          "accuracy_wilson95": [
+            0.5428252365556403,
+            0.8530141866149725
+          ],
+          "auto_count": 5,
+          "auto_intent_accuracy": 1.0,
+          "confusion": {
+            "account_access": {
+              "account_access": 1
+            },
+            "billing": {},
+            "feedback": {
+              "other": 4
+            },
+            "how_to": {
+              "other": 2
+            },
+            "library": {
+              "library": 3
+            },
+            "other": {
+              "other": 13,
+              "subscription": 2
+            },
+            "playback": {
+              "playback": 2
+            },
+            "subscription": {
+              "subscription": 2
+            }
+          },
+          "coverage": 0.1724137931034483,
+          "escalation_recall": 1.0,
+          "macro_f1_bootstrap95": [
+            0.2909090909090909,
+            0.6052631578947368
+          ],
+          "macro_f1_fixed_8": 0.553921568627451,
+          "missed_escalations": 0,
+          "n": 29,
+          "over_escalation_rate": 0.4444444444444444,
+          "per_intent": {
+            "account_access": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 1
+            },
+            "billing": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": null,
+              "support": 0
+            },
+            "feedback": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 4
+            },
+            "how_to": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 2
+            },
+            "library": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 3
+            },
+            "other": {
+              "f1": 0.7647058823529411,
+              "precision": 0.6842105263157895,
+              "recall": 0.8666666666666667,
+              "support": 15
+            },
+            "playback": {
+              "f1": 1.0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "support": 2
+            },
+            "subscription": {
+              "f1": 0.6666666666666666,
+              "precision": 0.5,
+              "recall": 1.0,
+              "support": 2
+            }
+          },
+          "required_escalations": 20,
+          "unsafe_auto_rate": 0.0,
+          "unsafe_auto_wilson95": [
+            0,
+            0.43449149475208104
+          ]
+        }
+      },
+      "unsafe_auto_rate": 0.075,
+      "unsafe_auto_wilson95": [
+        0.025835556771858226,
+        0.19864530159097524
+      ]
+    },
+    "trivial": {
+      "accuracy": 0.36875,
+      "accuracy_wilson95": [
+        0.2978861099664524,
+        0.4457687371541812
+      ],
+      "auto_count": 0,
+      "auto_intent_accuracy": null,
+      "confusion": {
+        "account_access": {
+          "other": 11
+        },
+        "billing": {
+          "other": 16
+        },
+        "feedback": {
+          "other": 9
+        },
+        "how_to": {
+          "other": 8
+        },
+        "library": {
+          "other": 23
+        },
+        "other": {
+          "other": 59
+        },
+        "playback": {
+          "other": 11
+        },
+        "subscription": {
+          "other": 23
+        }
+      },
+      "coverage": 0.0,
+      "escalation_recall": 1.0,
+      "latency_ms_median": 0.007599999662488699,
+      "latency_ms_p95": 0.010900002962443978,
+      "macro_f1_bootstrap95": [
+        0.05676328502415459,
+        0.07608695652173914
+      ],
+      "macro_f1_fixed_8": 0.06735159817351598,
+      "missed_escalations": 0,
+      "n": 160,
+      "over_escalation_rate": 1.0,
+      "per_intent": {
+        "account_access": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 11
+        },
+        "billing": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 16
+        },
+        "feedback": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 9
+        },
+        "how_to": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 8
+        },
+        "library": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 23
+        },
+        "other": {
+          "f1": 0.5388127853881278,
+          "precision": 0.36875,
+          "recall": 1.0,
+          "support": 59
+        },
+        "playback": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 11
+        },
+        "subscription": {
+          "f1": 0.0,
+          "precision": null,
+          "recall": 0.0,
+          "support": 23
+        }
+      },
+      "required_escalations": 115,
+      "routing_reasons": {
+        "always_escalate": 160
+      },
+      "slices": {
+        "first_contact": {
+          "accuracy": 0.33587786259541985,
+          "accuracy_wilson95": [
+            0.26069820802208127,
+            0.42040910604123444
+          ],
+          "auto_count": 0,
+          "auto_intent_accuracy": null,
+          "confusion": {
+            "account_access": {
+              "other": 10
+            },
+            "billing": {
+              "other": 16
+            },
+            "feedback": {
+              "other": 5
+            },
+            "how_to": {
+              "other": 6
+            },
+            "library": {
+              "other": 20
+            },
+            "other": {
+              "other": 44
+            },
+            "playback": {
+              "other": 9
+            },
+            "subscription": {
+              "other": 21
+            }
+          },
+          "coverage": 0.0,
+          "escalation_recall": 1.0,
+          "macro_f1_bootstrap95": [
+            0.051515151515151514,
+            0.0748663101604278
+          ],
+          "macro_f1_fixed_8": 0.06285714285714286,
+          "missed_escalations": 0,
+          "n": 131,
+          "over_escalation_rate": 1.0,
+          "per_intent": {
+            "account_access": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 10
+            },
+            "billing": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 16
+            },
+            "feedback": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 5
+            },
+            "how_to": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 6
+            },
+            "library": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 20
+            },
+            "other": {
+              "f1": 0.5028571428571429,
+              "precision": 0.33587786259541985,
+              "recall": 1.0,
+              "support": 44
+            },
+            "playback": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 9
+            },
+            "subscription": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 21
+            }
+          },
+          "required_escalations": 95,
+          "unsafe_auto_rate": null,
+          "unsafe_auto_wilson95": null
+        },
+        "followup": {
+          "accuracy": 0.5172413793103449,
+          "accuracy_wilson95": [
+            0.3443073797056916,
+            0.6861418066920478
+          ],
+          "auto_count": 0,
+          "auto_intent_accuracy": null,
+          "confusion": {
+            "account_access": {
+              "other": 1
+            },
+            "billing": {},
+            "feedback": {
+              "other": 4
+            },
+            "how_to": {
+              "other": 2
+            },
+            "library": {
+              "other": 3
+            },
+            "other": {
+              "other": 15
+            },
+            "playback": {
+              "other": 2
+            },
+            "subscription": {
+              "other": 2
+            }
+          },
+          "coverage": 0.0,
+          "escalation_recall": 1.0,
+          "macro_f1_bootstrap95": [
+            0.0641025641025641,
+            0.10204081632653061
+          ],
+          "macro_f1_fixed_8": 0.08522727272727272,
+          "missed_escalations": 0,
+          "n": 29,
+          "over_escalation_rate": 1.0,
+          "per_intent": {
+            "account_access": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 1
+            },
+            "billing": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": null,
+              "support": 0
+            },
+            "feedback": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 4
+            },
+            "how_to": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 2
+            },
+            "library": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 3
+            },
+            "other": {
+              "f1": 0.6818181818181818,
+              "precision": 0.5172413793103449,
+              "recall": 1.0,
+              "support": 15
+            },
+            "playback": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 2
+            },
+            "subscription": {
+              "f1": 0.0,
+              "precision": null,
+              "recall": 0.0,
+              "support": 2
+            }
+          },
+          "required_escalations": 20,
+          "unsafe_auto_rate": null,
+          "unsafe_auto_wilson95": null
+        }
+      },
+      "unsafe_auto_rate": null,
+      "unsafe_auto_wilson95": null
+    }
+  },
+  "test_n": 160,
+  "threshold": 0.55
+}

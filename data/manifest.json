@@ -1,0 +1,34 @@
+{
+  "brand": "SpotifyCares",
+  "brand_tweets": 43265,
+  "customer_tweets": 45180,
+  "discarded": {
+    "empty_message": 535
+  },
+  "eligible_pairs": 41050,
+  "files": {
+    "dev.jsonl": {
+      "rows": 40,
+      "sha256": "9587cc07430563674faaa7e3cf9f49f91c40676da5c955d3a1c3b631106f3ebc"
+    },
+    "test.jsonl": {
+      "rows": 160,
+      "sha256": "97b05126c336a6a9d44c919266977d890f6c2a961f796e1b6d87cbf64e516d4a"
+    },
+    "train.jsonl": {
+      "rows": 6000,
+      "sha256": "2c075ac031aeb1d997308fa717039fa102b649e5022e5aea50bbc3cbea61a633"
+    }
+  },
+  "groups": 24083,
+  "pool_counts": {
+    "dev": 3666,
+    "test": 5320,
+    "train": 32064
+  },
+  "sampling": "75/10/15 group hash split; uniform groups then one random message per group for evaluation",
+  "seed": 41,
+  "source_rows": 2811774,
+  "source_sha256": "7ffe106c4158c22f79b2a220297e4090dd68fa034c6e58710578ad8cfeea558a",
+  "source_url": "https://www.kaggle.com/api/v1/datasets/download/thoughtvector/customer-support-on-twitter"
+}

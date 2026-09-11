@@ -1,0 +1,5 @@
+{
+  "predictions_sha256": "212ba5f1f9b434a9ef2cd806fe3456ac450aee6a95e40ced7f04fce42b9e944a",
+  "review_sha256": "ac2ef814356d4bf377370bb380ff7b2db6f370ed426685cadceba01fc46ca3cf",
+  "sampling": "20 uniform message IDs, all three systems; 10 calibration and 10 audit messages"
+}

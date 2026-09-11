@@ -1,0 +1,10 @@
+[project]
+name = "hiver-support-lab"
+version = "0.1.0"
+description = "Evidence-first Spotify support agent and honest evaluation harness"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
